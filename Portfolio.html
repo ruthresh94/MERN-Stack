@@ -1,0 +1,286 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="Image/x-icon" href="Screenshot (28).png">
+        <title>Ruthresh's Portfolio</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: Arial, sans-serif;
+                background: url(desktop-wallpaper-portfolio.jpg) no-repeat center center fixed;
+                background-size: cover;
+                margin: 0;
+                padding: 0;
+                color: hsl(0, 0%, 93%);
+
+            }
+
+            header {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 20px;
+                background-color: rgba(0, 0, 0, 0.5);
+                z-index: 999;
+            }
+
+            .logo img {
+                width: 50px;
+                height: 50px;
+                transition: transform 0.3s ease;
+            }
+
+            .logo img:hover {
+                transform: scale(1.1);
+            }
+
+            .nav {
+                display: flex;
+            }
+
+            .nav a {
+                padding: 10px 20px;
+                text-decoration: none;
+                color: rgba(251, 255, 254, 0.855);
+                font-weight: 200;
+                transition: color 0.3s ease;
+            }
+
+            .nav a:hover {
+                color: cyan;
+            }
+
+            .container {
+                margin-top: 100px;
+                text-align: center;
+                justify-content: center;
+                margin-left: 150px;
+                margin-right: 100px;
+                align-items: center;
+                padding: 30px;
+                background-color: rgba(165, 159, 162, 0.671)1f;
+                border-radius: 20px;
+                box-shadow: 0 4px 8px rgba(148, 133, 133, 0.668);
+                margin-bottom: 20px;
+                overflow: hidden;
+                transition: box-shadow 0.3s ease;
+                font-size: 15px;
+                color: aliceblue;
+                border-radius: 80px;
+            }
+
+            .container h1 {
+                font-size: 3em;
+                margin-bottom: 20px;
+                animation: a 1s ease;
+            }
+
+            @keyframes a {
+                from {
+                    opacity: 0;
+                }
+
+                to {
+                    opacity: 1;
+                }
+            }
+
+            .content-section {
+                margin-bottom: 40px;
+            }
+
+            .content-section h2 {
+                font-size: 2em;
+                margin-bottom: 10px;
+            }
+
+            .content-section p {
+                font-size: 1.2em;
+                line-height: 1.6;
+            }
+
+            #skills,
+            #projects,
+            #contact,#profiles {
+                justify-content: center;
+                margin-left: 200px;
+                align-items: center;
+                text-align: center;
+                box-shadow: 0 4px 8px rgb(55, 27, 27);
+            }
+            p{
+                size: 2px;
+                color: #ffffff;
+                font-weight: 100;
+                font-size: larger
+            }
+            #skills,
+            #projects,
+            #contact,#Profiles {
+                margin-top: 100px;
+                text-align: center;
+                justify-content: center;
+                margin-left: 150px;
+                margin-right: 100px;
+                align-items: center;
+                padding: 30px;
+                background-color: rgba(165, 159, 162, 0.671)1f;
+                border-radius: 20px;
+                box-shadow: 0 4px 8px rgba(148, 133, 133, 0.668);
+                margin-bottom: 20px;
+                overflow: hidden;
+                transition: box-shadow 0.3s ease;
+                font-size: 15px;
+                color: aliceblue;
+                border-radius: 80px;
+            }
+            .social {
+                display: flex;
+                justify-content: center;
+                margin-top: 30px;
+                box-shadow: 0 4px 8px rgb(55, 27, 27);
+            }
+
+            .social img {
+                height: 40px;
+                width: 40px;
+                margin: 0 10px;
+                transition: transform 0.3s ease;
+
+            }
+
+            .social img:hover {
+                transform: scale(1.1);
+            }
+
+            .social img:nth-child(1) {
+                animation: a 1s ease 1s;
+            }
+
+            .social img:nth-child(2) {
+                animation: a 1s ease 1s;
+            }
+
+            .social img:nth-child(3) {
+                animation: a 1s ease 1s;
+            }
+
+            .social {
+                display: flex;
+                justify-content: center;
+                margin-top: 30px;
+            }
+
+            .content-section img {
+                height: 50px;
+                width: 50px;
+                margin: 0 10px;
+                transition: transform 0.3s ease;
+            }
+
+            .content-section img:hover {
+                transform: scale(1.1);
+            }
+
+            .content-section img:nth-child(1) {
+                animation: a 1s ease 1s;
+            }
+
+            .content-section img:nth-child(2) {
+                animation: a 1s ease 1s;
+            }
+
+            .content-section img:nth-child(3) {
+                animation: a 1s ease 1s;
+            }
+
+            h2 {
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h1 class="logo"><img src="Screenshot (28).png" alt="Logo"></h1>
+            <nav class="nav">
+                <a href="#">Home</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#Profiles">Profiles</a>
+                <a href="#contact">Contact</a>
+                
+            </nav>
+        </header>
+        <section>
+            <div class="container">
+                <h1>Hey! This is Ruthresh</h1><br>
+                <h2>Passionate ECE student with a keen interest in networking and web development, eager to explore the
+                    intersection of technology and creativity.</h2>
+        </section>
+        <section>
+            <div id="skills" class="content-section">
+                <h2>Skills</h2><br>
+                <h3>Programming Languages: <br><br>
+                    <img src="icons8-html-5-48.png" alt="HTML" title="HTML">
+                    <img src="icons8-css3-48.png" alt="CSS" title="CSS">
+                    <img src="icons8-javascript-48.png" alt="JavaScript" title="JavaScript">
+                    <img src="icons8-python-48.png" alt="Python" title="Python">
+                    <img src="icons8-c-48.png" alt="C" title="C">
+                    <img src="icons8-java-48.png" alt="Java" title="Java">
+                </h3><br>
+                <h3>Frameworks/Libraries:
+                    <br><br>
+                    <img src="icons8-react-100.png" alt="React" title="React">
+                    <img src="icons8-bootstrap-48.png" alt="Bootstrap" title="Bootstrap">
+                </h3><br>
+                <h3>Tools: <br><br>
+                    <img src="icons8-github-48.png" alt="Git" title="Git">
+                    <img src="download.png" alt="VS Code" title="VS Code">
+                    <img src="icons8-arduino-48 (1).png" alt="Arduino" title="Arduino">
+                </h3>
+            </div>
+        </section>
+        <section>
+            <div id="projects" class="content-section">
+                <h2>Projects</h2><br>
+                <p>MineGuard - A Safety Kit for mine workers using IOT</p><br>
+                <p>Enviro Flow Tracker- A Safety Kit for Sewage Workers</p><br>
+                <p>Disease Predicting Using AI with Medi-Aadhar ID</p>
+            </div>
+        </section>
+        <section>
+            <div id="Profiles" class="content-section">
+                <h2>Profiles</h2><br><br>
+                    <a href="https://www.hackerrank.com/profile/ruthresh_t2022e1"><img src="icons8-hackerrank-is-a-technology-company-that-focuses-on-competitive-programming-24.png" alt="Hackerrank" title="Hackerrank"></a>
+                    <a href="https://leetcode.com/ruthresht/"><img src="icons8-level-up-your-coding-skills-and-quickly-land-a-job-24.png" alt="Leetcode" title="Leetcode"></a>
+                    <a href="https://www.codechef.com/users/ruthresht"><img src="icons8-codechef-100.png" alt="Codechef" title="Codechef"></a>
+                </p></div></section>
+        <section>
+            <div id="contact" class="content-section">
+                <h2>Contact</h2><br>
+                <p>Email: truthresh096@gmail.com</p><br>
+                <p>Phone: +91 9342508157</p>
+            </div>
+        </section>
+        </div>
+        <div class="social">
+            <a href="https://github.com/ruthresh94"><img src="icons8-github-48.png"></a>
+            <a href="ruthresh.t2022ece@sece.ac.in"><img src="icons8-gmail-48 (1).png"></a>
+            <a href="https://www.linkedin.com/in/ruthresh-t-ece-8aba22259/"><img src="icons8-linkedin-48.png"></a>
+        </div>
+    </body>
+
+    </html>
