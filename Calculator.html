@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            border: none;
+            width: 100px;
+            height: 80px;
+            border-radius: 7%;
+            margin-left: 10px;
+            margin-top: 10px;
+            background-color: rgb(255, 255, 255);
+            cursor: pointer;
+            font-weight: bolder;
+        }
+
+        h1 {
+            margin-left: 600px;
+            padding-left: 500px;
+            margin-top: -580px;
+            margin-right: -280px;
+        }
+
+        button:hover {
+            background-color: rgb(11, 126, 242);
+        }
+
+        body {
+            background: aqua;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .screen {
+            width: 380px;
+            height: 120px;
+            border: 5px solid black;
+            padding-left: 50px;
+            margin-left: 20px;
+            margin-top: 5px;
+            border-radius: 10px;
+            background-color: rgb(155, 198, 180);
+        }
+
+        .whole {
+            border: 5px solid black;
+            width: 480px;
+            height: 610px;
+            border-radius: 40px;
+            background-color: rgba(188, 188, 188, 0.374);
+
+            margin-right: 660px;
+            padding: 25px;
+            margin-top: 200px;
+        }
+
+        input {
+            font-size: 50px;
+            text-align: right;
+        }
+    </style>
+    <script>
+        function solve(val) {
+            var v = document.getElementById('res');
+            v.value += val;
+        }
+
+        function result() {
+            var num1 = document.getElementById('res').value;
+            var num2 = eval(num1);
+            document.getElementById('res').value = num2;
+        }
+
+        function Clear() {
+            var u = document.getElementById('res');
+            u.value = '';
+        }
+
+        function back() {
+            var e = document.getElementById('res');
+            e.value = e.value.slice(0, -1);
+        }
+    </script>
+</head>
+
+<body>
+    <h1>CALCULATOR</h1>
+    <div class="whole" id="">
+        <input type="text" id="res" class="screen">
+        <button onclick="solve('1')">1</button>
+        <button onclick="solve('2')">2</button>
+        <button onclick="solve('3')">3</button>
+        <button onclick="solve('4')">4</button>
+        <br>
+        <button onclick="solve('5')">5</button>
+        <button onclick="solve('6')">6</button>
+        <button onclick="solve('7')">7</button>
+        <button onclick="solve('8')">8</button><br>
+        <button onclick="solve('9')">9</button>
+        <button onclick="solve('0')">0</button>
+        <button onclick="solve('+')">+</button>
+        <button onclick="solve('-')">-</button><br>
+        <button onclick="solve('*')">x</button>
+        <button onclick="solve('/')">/</button>
+        <button onclick="solve('%')">%</button>
+        <button onclick="result()">=</button><br>
+        <button onclick="solve('.')">.</button>
+        <button onclick="solve('00')">00</button>
+        <button onclick="Clear()">C</button>
+        <button onclick="back()">Back</button>
+    </div>
+</body>
+
+</html>

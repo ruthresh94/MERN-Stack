@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #Hai{
+            width: 1000px;
+            height: 1000px;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="Hai"></div>
+    <button onclick="color()">Change Color</button>
+    <script>
+        function color(){
+            const a=document.getElementById("Hai");
+            const randomColor="red";
+            a.style.backgroundColor=randomColor;
+        }
+    </script>
+</body>
+</html>
