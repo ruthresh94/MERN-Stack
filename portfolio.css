@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-image: linear-gradient(-250deg, #fb6f82 10%, #e09553cd 50%);
+    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
     margin: 0;
     padding: 0;
     color: hsl(0, 0%, 93%);
@@ -20,15 +20,16 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background-color: #0000007b;
+    padding: 5px;
+    background-color: #000000a4;
     z-index: 999;
-    box-shadow: 0 8px 8px #fb6f82;
+    box-shadow: 0 8px 8px #020a2a;
+   
 }
 
 .logo img {
-    width: 70px;
-    height: 65px;
+    width: 100px;
+    height: 100px;
     transition: transform 0.3s ease;
 }
 
@@ -62,7 +63,7 @@ header {
     margin-right: 100px;
     align-items: center;
     padding: 30px;
-    background-color: linear-gradient(-250deg, #fb6f82 10%, #e09553cd 50%);
+    background-image: linear-gradient(to top, #304e68 0%, #ffffff 100%);
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.668);
     margin-bottom: 20px;
@@ -138,7 +139,7 @@ p {
     margin-right: 100px;
     align-items: center;
     padding: 30px;
-    background-color: linear-gradient(-250deg, #fb6f82 10%, #e09553cd 50%);
+    background-image: linear-gradient(to top, #304e68 0%, #ffffff 100%);
     border-radius: 40px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.668);
     margin-bottom: 20px;
@@ -245,11 +246,6 @@ p {
 h2 {
     text-align: center;
 }
-
-section {
-    padding-top: 30px;
-}
-
 #Image {
     display: flex;
     justify-content: center;
@@ -327,7 +323,7 @@ hr
     letter-spacing: 2px;
     line-height: 20px;
     font-size: 16px;
-}
+}   
 section {
     opacity: 0;
     transform: translateY(50px);
@@ -337,5 +333,8 @@ section {
 section.active {
     opacity: 1;
     transform: translateY(0);
+}
+.copy p{
+    color: black;
 }
 
