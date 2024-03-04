@@ -5,116 +5,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="portfolio.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <link rel="icon" type="Image/x-icon" href="Final.png">
     <title>Ruthresh's Portfolio</title>
-
 </head>
 
 <body>
     <header>
         <h1 class="logo"><img src="mylogo.png" alt="Logo"></h1>
         <nav class="nav">
-            <a id="nav" href="#">Home</a>
-            <a id="nav" href="#skills">Skills</a>
-            <a id="nav" href="#projects">Projects</a>
-            <a id="nav" href="#Profiles">Profiles</a>
-            <a id="nav" href="#contact">Contact</a>
+            <a href="#home">Home</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#profiles">Profiles</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
-    <section>
-        <div id="Image" class="content-section">
-            <img src="Ruth.jpeg" alt="3D Image" style="width: 300px; height: 300px; float: left;border-radius: 60%;">
+    <section id="home">
+        <div class="content-section">
+            <img src="Ruth.jpeg" alt="3D Image" style="width: 300px; height: 300px; float: center;border-radius: 60%;">
+            <div class="container">
+                <h1>🚀Hey! This is <span>Ruthresh</span></h1>
+                <h2>Passionate ECE student with a keen interest in networking and web development, eager to explore the intersection of technology and creativity.</h2>
+            </div>
         </div>
     </section>
-    <section>
-        <div class="container">
-            <h1>🚀Hey! This is <span>Ruthresh</span></h1><br>
-            <h2>Passionate ECE student with a keen interest in networking and web development,<br> eager to explore the
-                intersection of technology and creativity.</h2>
-    </section>
-    <section>
-        <div id="skills" class="content-section">
-            <h2>Skills</h2><br>
-            <h3>Programming Languages: <br><br>
-                <img src="icons8-html-5-48.png" alt="HTML" title="HTML">
-                <img src="icons8-css3-48.png" alt="CSS" title="CSS">
-                <img src="icons8-javascript-48.png" alt="JavaScript" title="JavaScript">
-                <img src="icons8-python-48.png" alt="Python" title="Python">
-                <img src="icons8-c-48.png" alt="C" title="C">
-                <img src="icons8-java-48.png" alt="Java" title="Java">
-            </h3><br>
-            <h3>Frameworks/Libraries:
-                <br><br>
-                <img src="icons8-react-100.png" alt="React" title="React">
-                <img src="icons8-bootstrap-48.png" alt="Bootstrap" title="Bootstrap">
-            </h3><br>
-            <h3>Tools: <br><br>
-                <img src="icons8-github-48.png" alt="Git" title="Git">
-                <img src="download.png" alt="VS Code" title="VS Code">
-                <img src="icons8-arduino-48 (1).png" alt="Arduino" title="Arduino">
-            </h3>
+    <section id="skills">
+        <div class="content-section">
+            <h2>Skills</h2>
+            <h3>Programming Languages:</h3><br>
+            <img src="icons8-html-5-48.png" alt="HTML" title="HTML">
+            <img src="icons8-css3-48.png" alt="CSS" title="CSS">
+            <img src="icons8-javascript-48.png" alt="JavaScript" title="JavaScript">
+            <img src="icons8-python-48.png" alt="Python" title="Python">
+            <img src="icons8-c-48.png" alt="C" title="C">
+            <img src="icons8-java-48.png" alt="Java" title="Java"><br><br>
+            <h3>Frameworks/Libraries:</h3><br>
+            <img src="icons8-react-100.png" alt="React" title="React">
+            <img src="icons8-bootstrap-48.png" alt="Bootstrap" title="Bootstrap"><br><br>
+            <h3>Tools:</h3><br>
+            <img src="icons8-github-48.png" alt="Git" title="Git">
+            <img src="download.png" alt="VS Code" title="VS Code">
+            <img src="icons8-arduino-48 (1).png" alt="Arduino" title="Arduino">
         </div>
     </section>
-    <section>
-        <div id="projects" class="content-section">
-            <h2>Projects</h2><br>
+    <section id="projects">
+        <div class="content-section">
+            <h2>Projects</h2>
             <div class="project">
-                <img src="Mineguard.jpg" alt="MineGuard" ">
+                <img src="Mineguard.jpg" alt="MineGuard">
                 <div class="project-description">
                     <h4>MINEGUARD</h4>
-                    <p>MineGuard embodies an innovative loT initiative integrating sensors to monitor environmental
-                        gases. Leveraging Fogwing software, it detects gas levels, issuing timely alerts for enhanced
-                        safety.</p>
+                    <p>MineGuard embodies an innovative loT initiative integrating sensors to monitor environmental gases. Leveraging Fogwing software, it detects gas levels, issuing timely alerts for enhanced safety.</p>
                 </div>
-            </div><br>
+            </div>
             <div class="project">
                 <img src="ET.jpg" alt="EnviroFlow Tracker">
                 <div class="project-description">
                     <h4>ENVIROFLOW TRACKER</h4>
-                    <p>The EnviroFlow Tracker is our cutting-edge project designed to detect sewage gases, prioritizing
-                        worker safety. Through advanced sensors, it identifies hazardous levels, alerting workers
-                        promptly.</p>
+                    <p>The EnviroFlow Tracker is our cutting-edge project designed to detect sewage gases, prioritizing worker safety. Through advanced sensors, it identifies hazardous levels, alerting workers promptly.</p>
                 </div>
-            </div><br>
+            </div>
             <div class="project">
-                <img src="AI.jpg" alt="AI Consultancy" style=>
+                <img src="AI.jpg" alt="AI Consultancy">
                 <div class="project-description">
                     <h4>AI CONSULTANCY</h4>
-                    <p>Experience an advanced disease detection website empowered by AI algorithms, meticulously built
-                        with a blend of HTML, CSS, PHP, and Python for seamless functionality and accurate diagnostics.
-                    </p>
+                    <p>Experience an advanced disease detection website empowered by AI algorithms, meticulously built with a blend of HTML, CSS, PHP, and Python for seamless functionality and accurate diagnostics.</p>
                 </div>
             </div>
         </div>
     </section>
-
-    <section>
-        <div id="Profiles" class="content-section">
-            <h2>Profiles</h2><br><br>
+    <section id="profiles">
+        <div class="content-section">
+            <h2>Profiles</h2>
             <p>Have a look at my versatile coding platforms</p>
-            <a target="_blank" href="https://www.hackerrank.com/profile/ruthresh_t2022e1"><img src="./icons8-hackerrank-32.png"
-                    alt="Hackerrank" title="Hackerrank"></a>
-            <a target="_blank" href="https://leetcode.com/ruthresht/"><img
-                    src="icons8-level-up-your-coding-skills-and-quickly-land-a-job-24.png" alt="Leetcode"
-                    title="Leetcode"></a>
-            <a target="_blank"href="https://www.codechef.com/users/ruthresht"><img src="./icons8-codechef-50.png" alt="Codechef"
-                    title="Codechef"></a>
-            </p>
+            <a target="_blank" href="https://www.hackerrank.com/profile/ruthresh_t2022e1"><img src="./icons8-hackerrank-32.png" alt="Hackerrank" title="Hackerrank"></a>
+            <a target="_blank" href="https://leetcode.com/ruthresht/"><img src="icons8-level-up-your-coding-skills-and-quickly-land-a-job-24.png" alt="Leetcode" title="Leetcode"></a>
+            <a target="_blank" href="https://www.codechef.com/users/ruthresht"><img src="./icons8-codechef-50.png" alt="Codechef" title="Codechef"></a>
         </div>
     </section>
-    <section>
-        <div id="contact" class="content-section">
-            <h2>Contact</h2><br>
-            <p>Email: truthresh096@gmail.com</p><br>
+    <section id="contact">
+        <div class="content-section">
+            <h2>Contact</h2>
+            <p>Email: truthresh096@gmail.com</p>
             <p>Phone: +91 9342508157</p>
+            <form action="#">
+                <label for="name">Name:</label><br><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Email:</label><br><br>
+                <input type="email" id="email" name="email"><br>
+                <label for="subject">Subject:</label><br><br>
+                <input type="text" id="subject" name="subject"><br>
+                <label for="message">Message:</label><br><br>
+                <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+                <input type="submit" value="Submit">
+            </form>
         </div>
     </section>
-    </div>
-    <hr>
     <div class="social">
-        <a  target="_blank" href="https://github.com/ruthresh94"><img src="icons8-github-48.png"></a>
-        <a target="_blank" href="https://mail.google.com/mail/u/0/#inbox?compose=new"><img src="icons8-gmail-48 (1).png"></a>
+        <a target="_blank" href="https://github.com/ruthresh94"><img src="icons8-github-48.png"></a>
+        <a target="_blank" href="ruthresh.t2022ece@sece.ac.in"><img src="icons8-gmail-48 (1).png"></a>
         <a target="_blank" href="https://www.linkedin.com/in/ruthresh-t-ece-8aba22259/"><img src="icons8-linkedin-48.png"></a>
     </div>
     <div class="copy">
