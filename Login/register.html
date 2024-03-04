@@ -15,20 +15,20 @@
             <form action="">
                 <h3>Register</h3>
                 <div class="input">
-                    <input type="text" required placeholder="Full Name">
+                    <input type="text" id="fullName" required placeholder="Full Name">
                 </div>
                 <div class="input">
-                    <input type="email" required placeholder="Email">
+                    <input type="email" id="email" required placeholder="Email">
                 </div>
                 <div class="input">
-                    <input type="password" id="password" required placeholder="Password">
-                    <i class="fas fa-eye" id="showpassword"></i>
+                    <input type="password" id="newPassword" required placeholder="Password">
+                    <i class="fas fa-eye" id="showNewPassword"></i>
                 </div>
                 <div class="input">
                     <input type="password" id="confirmPassword" required placeholder="Confirm password">
                     <i class="fas fa-eye" id="showConfirmPassword"></i>
                 </div>
-                <button type="submit">Register</button>
+                <button type="button" onclick="register()">Register</button>
                 <div class="register">
                     <p>Already have an account? <a href="login.html">Login</a></p>
                 </div>
